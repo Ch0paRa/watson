@@ -5,14 +5,15 @@ import { getConvexClient } from "@/lib/convex";
 import { redirect } from "next/navigation";
 import { auth } from "@clerk/nextjs/server";
 
+
 interface ChatPageProps {
   params: {
     chatId: Id<"chats">;
   };
 }
 
-export default async function ChatPage({ params }: ChatPageProps) {
-  const { chatId } = await params;
+export default async function ChatPage({ params }: { params: Promise<ChatPageProps> }) {
+  const { chatId } = (await params).params;
 
   // Get user authentication
   const { userId } = await auth();
