@@ -20,7 +20,7 @@
     "@radix-ui/react-icons": "^1.3.2",
     "@radix-ui/react-slot": "^1.1.1",
     "@types/react-timeago": "^4.1.7",
-    "@yarn add @ibm-cloud/watsonx-ai/sdk": "0.2.0-beta.6",
+    "@wxflows/sdk": "0.2.0-beta.6",
     "ai": "^4.0.29",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
